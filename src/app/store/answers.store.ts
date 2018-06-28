@@ -26,6 +26,7 @@ export class AnswersStore {
 
   clearStorage() {
     this.answers = [];
+    localStorage.removeItem('answers');
   }
 
   private saveToStorage() {
