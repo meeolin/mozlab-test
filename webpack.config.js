@@ -61,7 +61,7 @@ const mainConfig = {
 
     new HtmlWebpackPlugin({
       template: 'index.html',
-      title: 'ProjectName',
+      title: 'MozLab Test',
       chunksSortMode: 'dependency',
       metadata: {
         isDevServer: isWebpackDevServer(),
