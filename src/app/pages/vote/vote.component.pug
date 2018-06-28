@@ -1,0 +1,18 @@
+mat-card.vote
+  mat-card-title Голосование
+  mat-card-content
+    mat-list
+      mat-list-item(*ngFor='let answer of answers')
+       span(matLine) {{answer.text}}
+       mat-icon(
+        svgIcon="thumbs-up",
+        (click)='vote(answer, 1)',
+        [class._disabled]='answer.vote == -1',
+        [class._active]='answer.vote == 1',
+       )
+       mat-icon(
+        svgIcon="thumbs-down",
+        (click)='vote(answer, -1)',
+        [class._disabled]='answer.vote == 1',
+        [class._active]='answer.vote == -1',
+       )

@@ -1,0 +1,17 @@
+.vote {
+  mat-icon {
+    cursor: pointer;
+    &._disabled {
+      cursor: default;
+      .st0{
+        fill: #b8b8b8;
+      }
+    }
+    &._active {
+      cursor: default;
+      .st0{
+        fill: #673ab7;
+      }
+    }
+  }
+}

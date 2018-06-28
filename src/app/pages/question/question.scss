@@ -1,0 +1,26 @@
+.question {
+  .mat-form-field {
+    width: 100%;
+    margin-bottom: 10px;
+    textarea {
+      max-height: 80px;
+    }
+  }
+  .mat-card-actions {
+    display: flex;
+    margin: 0;
+    button.question__button {
+      margin-left: auto;
+    }
+  }
+  .error {
+    position: absolute;
+    margin-top: 10px;
+    font-size: 12px;
+    color: crimson;
+  }
+}
+
+.answers {
+  margin-top: 20px;
+}

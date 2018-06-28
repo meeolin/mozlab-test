@@ -1,0 +1,25 @@
+mat-card.question
+  mat-card-title Ответьте на вопрос
+  mat-card-content
+    mat-card-subtitle Ответьте на важный и насущный вопрос
+    mat-form-field
+      textarea(
+        matInput,
+        placeholder="Ваш ответ..",
+        [(ngModel)]='answerForSave',
+        (ngModelChange)='handleAnswerChange()',
+      )
+      .error(*ngIf='error') {{error}}
+    mat-card-actions
+      button.question__button(
+        mat-raised-button,
+        color="primary",
+        [disabled]='!answerForSave',
+        (click)='saveAnswer()'
+      ) Отправить
+
+mat-card.answers(*ngIf='!!answers.length')
+  mat-card-title Уже отвечали:
+  mat-card-content
+    mat-list
+      mat-list-item(*ngFor='let answer of answers') {{answer.text}}

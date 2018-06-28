@@ -1,0 +1,11 @@
+question(*ngIf='isQuestionPage')
+vote(*ngIf='!isQuestionPage')
+
+
+.clear-btn
+  button(
+    mat-raised-button,
+    color="primary",
+    [disabled]='!answers.length',
+    (click)='clear()'
+  ) Очистить список ответов

@@ -1,0 +1,37 @@
+{
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true,
+    "transpileOnly": true,
+    "useBabel": true,
+    "useCache": true,
+    "useWebpackText": true
+  },
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": ["es6", "dom"],
+    "types": [
+      "node",
+      "jquery"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "src",
+    "node_modules/@types/jquery/index.d.ts",
+    "src/js/interfaces/global-definitions.d.ts"
+  ]
+}
